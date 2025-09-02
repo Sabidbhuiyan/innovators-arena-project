@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;  /* horizontal */
+    align-items: center;      /* vertical */
+}
+.nav-container {
+
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+.navbar a:hover {
+    text-decoration: underline;
+}
+.logo {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Buttons */
+.add-btn a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+.add-btn a:hover {
+    background-color: #0056b3;
+}
+
+/* Items Feed */
+.items-feed {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+.item-card {
+    background-color: white;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+.item-card:hover {
+    transform: scale(1.03);
+}
+.item-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.item-info {
+    padding: 15px;
+}
+.item-info h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.contact {
+    font-weight: bold;
+}
+
+/* Form */
+.add-form {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+.add-form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+.add-form input[type="text"],
+.add-form textarea,
+.add-form select,
+.add-form input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1em;
+}
+.add-form select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('data:image/svg+xml;utf8,<svg fill="gray" height="12" viewBox="0 0 24 24" width="12" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right 10px center;
+    background-color: white;
+    background-size: 12px;
+    cursor: pointer;
+}
+.add-form select:hover {
+    border-color: #007bff;
+}
+.add-form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+.add-form button:hover {
+    background-color: #218838;
+}
+
+
+.delete-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
