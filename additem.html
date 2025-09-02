@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="container">
+    <h1>Add Lost/Found Item</h1>
+    <form method="POST" action="/add" enctype="multipart/form-data" class="add-form">
+        <label for="title">Item Title</label>
+        <input type="text" id="title" name="title" required>
+
+        <label for="description">Description</label>
+        <textarea id="description" name="description" rows="4" required></textarea>
+
+        <label for="location">Location</label>
+        <input type="text" id="location" name="location" required>
+
+        <label for="type">Status</label>
+        <select id="type" name="type" required>
+            <option value="" disabled selected>Select Lost or Found</option>
+            <option value="lost">Lost</option>
+            <option value="found">Found</option>
+        </select>
+
+        <label for="contact">Contact Info</label>
+        <input type="text" id="contact" name="contact" required>
+
+        <label for="image">Upload Image (optional)</label>
+        <input type="file" id="image" name="image" accept="image/*">
+
+        <button type="submit">Add Item</button>
+    </form>
+</div>
+{% endblock %}
