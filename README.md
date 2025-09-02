@@ -36,9 +36,9 @@ cd lostfound-platform`
 
 ### 2️⃣ Create & Activate a Virtual Environment
 `python -m venv venv`
-# Windows
+#### Windows ####
 `venv\Scripts\activate`
-# Mac/Linux
+#### Mac/Linux ####
 `source venv/bin/activate`
 
 ### 3️⃣ Install Dependencies
@@ -48,11 +48,11 @@ cd lostfound-platform`
 `python init_db.py`
 
 ### 5️⃣ Run the Flask App
-# Mac/Linux
+#### Mac/Linux ####
 `export FLASK_APP=app.py
 flask run`
 
-# Windows
+#### Windows
 `set FLASK_APP=app.py
 flask run`
 
